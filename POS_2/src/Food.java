@@ -1,10 +1,10 @@
 
 public abstract class Food {
 		 
-	    private String name;        // name of the item (ex: Apple, Orange, Chicken, ...)
-	    private String measurement; // Unit of measurement (ex. kg)
-	    private double price;       // Price per unit of measurement (ex. $1.50/kg)
-	    private double stock;       // amount of item the store has in stock
+	    private String name;        // name of the item
+	    private String measurement; // Unit of measurement
+	    private double price;       // Price per unit
+	    private double stock;       // amount in stock
 	     
 	    public Food(String name, String measurement, double price, double stock) {
 	        this.name = name;
@@ -21,8 +21,8 @@ public abstract class Food {
 	        return price;
 	    }
 	     
-	    // Decrease the stock in a safe manner
-	    // true = success, false = failure
+	    // if the amount needed is lower than stock num, 
+	    // return true and decrease stock. if not, return false
 	    public boolean decreaseStock(double amount) {
 	        if(amount <= stock) {
 	            stock -= amount;
