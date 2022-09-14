@@ -1,2 +1,2 @@
-# firstPOSproj
-This is a simple POS project that highlights the outline of a POS without a GUI. Super simple 
+# receipt generator 
+A simple program  to reinforce Java skills and practice utilizng OOP to build a receipt generator. It lists the grocery's inventories, and the user is then asked for the quantity and measurement of a food item. 
