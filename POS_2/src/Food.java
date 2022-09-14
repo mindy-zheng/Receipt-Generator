@@ -1,4 +1,3 @@
-
 public abstract class Food {
 		 
 	    private String name;        // name of the item
